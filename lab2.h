@@ -2,7 +2,7 @@
 #include <math.h>
 
 void lab2() {
-    double a = 0.7, dx = 0.1, x1 = 0, x2 = 8.2;
+    double a = 0.7, dx = 0.4, x1 = 0, x2 = 8.2;
     double x, y = 0, y1, dy = 0, ymin = 0, ymax = 0;
 
     x = x1 - dx;
@@ -28,6 +28,8 @@ void lab2() {
 
         y <= ymin ? ymin = y : 0;
         y >= ymax ? ymax = y : 0;
+
+        printf("%f - %f \n", x, y);
 
     }
 
